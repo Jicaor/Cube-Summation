@@ -64,30 +64,35 @@
 
     <!-- Resolve Panel -->
     <section id="resolvePanel" class="wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2>Type the commands and press RUN</h2>
-            </div>
-            <form action="{{route('cube.run')}}" method="POST" name="formRun" id="formRun" role="form">
-            <div class="col-xs-12 col-sm-5">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Input</div>
-                    <textarea class="form-control textAreaCustomize" rows="15" id="input"></textarea>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Type the commands and press RUN</h2>
                 </div>
+                <form action="{{route('cube.run')}}" method="POST" name="formRun" id="formRun" role="form">
+
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Input</div>
+                            {{csrf_field()}}
+                            <textarea class="form-control textAreaCustomize" rows="15" id="input" name="input" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-2 text-center">
+                        <button type="button" class="btn btn-success btn-lg btn-run" id="run" name="run" onclick="runSummation()">Run ></button>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Output</div>
+                            <textarea class="form-control textAreaCustomize" rows="15" id="output" name="output" readonly></textarea>
+                        </div>
+                    </div>
+
+                </form>
             </div>
-            <div class="col-xs-12 col-sm-2 text-center">
-                <button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-bottom: 20px;">Run ></button>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Output</div>
-                    <textarea class="form-control textAreaCustomize" rows="15" id="result" readonly></textarea>
-                </div>
-            </div>
-                <form>
         </div>
-    </div>
-</section>
+    </section>
 
 @stop

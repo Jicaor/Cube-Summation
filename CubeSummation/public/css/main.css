@@ -3269,6 +3269,11 @@
 	margin: 0px;
 }
 
+.btn-run {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 h2 {
 	color: #F6755E;
 }
