@@ -18,6 +18,16 @@ class CubeController extends Controller
         //
     }
 
+    public function home()
+    {
+        return view('cube.home');
+    }
+
+    public function about()
+    {
+        return view('cube.about');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

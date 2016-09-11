@@ -69,23 +69,21 @@
             <div class="col-xs-12 text-center">
                 <h2>Type the commands and press RUN</h2>
             </div>
-            <form action="">
-                <div class="col-xs-12 col-sm-5">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Input</div>
-                        <textarea class="form-control textAreaCustomize" rows="15" id="input"></textarea>
-                    </div>
+            <div class="col-xs-12 col-sm-5">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Input</div>
+                    <textarea class="form-control textAreaCustomize" rows="15" id="input"></textarea>
                 </div>
-                <div class="col-xs-12 col-sm-2 text-center">
-                    <button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-bottom: 20px;">Run ></button>
+            </div>
+            <div class="col-xs-12 col-sm-2 text-center">
+                <button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-bottom: 20px;">Run ></button>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Output</div>
+                    <textarea class="form-control textAreaCustomize" rows="15" id="result" readonly></textarea>
                 </div>
-                <div class="col-xs-12 col-sm-5">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Output</div>
-                        <textarea class="form-control textAreaCustomize" rows="15" id="result" readonly></textarea>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
