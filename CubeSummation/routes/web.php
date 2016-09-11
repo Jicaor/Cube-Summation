@@ -13,3 +13,4 @@
 
 Route::get('/', 'CubeController@home');
 Route::get('about', 'CubeController@about');
+Route::post('/run', ['as' => 'cube.run', 'uses' => 'CubeController@run']);

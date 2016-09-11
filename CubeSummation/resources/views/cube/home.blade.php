@@ -69,6 +69,7 @@
             <div class="col-xs-12 text-center">
                 <h2>Type the commands and press RUN</h2>
             </div>
+            <form action="{{route('cube.run')}}" method="POST" name="formRun" id="formRun" role="form">
             <div class="col-xs-12 col-sm-5">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Input</div>
@@ -84,6 +85,7 @@
                     <textarea class="form-control textAreaCustomize" rows="15" id="result" readonly></textarea>
                 </div>
             </div>
+                <form>
         </div>
     </div>
 </section>
