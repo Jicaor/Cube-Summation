@@ -9,19 +9,21 @@
                 <div class="col-xs-12 col-sm-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">Sample Input</div>
-                        <div class="panel-body">
-                            2<br>
-                            4 5</br>
-                            UPDATE 2 2 2 4</br>
-                            QUERY 1 1 1 3 3 3</br>
-                            UPDATE 1 1 1 23</br>
-                            QUERY 2 2 2 4 4 4</br>
-                            QUERY 1 1 1 3 3 3</bbr>
-                            2 4</br>
-                            UPDATE 2 2 2</br>
-                            QUERY 1 1 1 1 1</br>
-                            QUERY 1 1 1 2 2</br>
-                            QUERY 2 2 2 2 2 2
+                        <div class="panel-body codePre">
+<pre>
+2
+4 5
+UPDATE 2 2 2 4
+QUERY 1 1 1 3 3 3
+UPDATE 1 1 1 23
+QUERY 2 2 2 4 4 4
+QUERY 1 1 1 3 3 3
+2 4
+UPDATE 2 2 2 1
+QUERY 1 1 1 1 1 1
+QUERY 1 1 1 2 2 2
+QUERY 2 2 2 2 2 2
+</pre>
                         </div>
                     </div>
                 </div>
